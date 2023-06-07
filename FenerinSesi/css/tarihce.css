@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+h1,h2, h5,div, p,a{
+	font-family: 'Manrope', sans-serif;
+}
+
+h1,h2{
+	filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 1.0));
+    color:black; 
+    font-size: 60px;
+}
+
+p{
+    color:black;
+    font-size:18px;
+}
+
+body{
+    background: rgb(255,233,2);
+    background: linear-gradient(90deg, rgba(255,233,2,1) 0%, rgba(24,0,103,1) 0%);  
+}  
+
+#kayan-gorsel {
+    width: 100%;
+    overflow: hidden;
+}
+
+#kayan-gorsel img {
+    width: 100%;
+    height: auto;
+}
+
+.metin-container {
+    position: relative;
+}
+
+.footer {
+    background-image: url("../img/fb_background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+.sol-metin {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    transform: translateY(-50%);
+    color:black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.sag-metin {
+    position: absolute;
+    top: 50%;
+    right: 160px;
+    transform: translateY(-50%);
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.title{
+    margin-left: 10px;
+}
+
+.titleText{
+    font-size: 40px;
+}
+    
+.sosyal-medya-logolar {
+    text-align: left;
+    position: relative;
+    top: 7px;
+    left: 85px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.sosyal-medya-logolar i {
+    margin-right: 20px;
+    
+}
+
+.alt-cizgi {
+    position: absolute;
+    top: 100px;
+    left: 572px;
+    width: 280px;
+    border-bottom: 1px solid #000;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.carouselkonum{
+    margin-left:50%;
+}
+
+.baslik{
+    width: 100%;
+}
+
+.carouselYazi{
+    margin-bottom : 130px;
+    margin-right: 50px;
+}
+
+.divs{
+    height: 285px; 
+    width: 1280px; 
+    margin-left: -50px;
+    border-radius: 5px;
+    background: rgb(57,57,57);background: linear-gradient(90deg, rgba(57,57,57,1) 100%, rgba(255,255,255,1) 100%); color: white;
+}
+
+.divs img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+  
+.divs p {
+    text-align: right;
+}
+
+.feneriumKonum{
+
+    width: 70%; 
+    margin-left: 320px;
+}
+
+.fenerium{
+    border-radius: 5px;
+    background: white;
+}
+
+.fenerium img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+  
+.fenerium p {
+    text-align: right;
+}
+
+.footer {
+    background-image: url("../img/fb_background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    width: 100%;
+}
+
+.search-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+}
+
+.search-wrapper.right-bottom {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+    left: auto;
+    right: 55px;
+    transform: translate(0, 0);
+}
+
+.search-wrapper .input-holder {    
+    height: 70px;
+    width:70px;
+    overflow: hidden;
+    background: rgba(3, 23, 240, 0.603);
+    border-radius:6px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder {
+    width:450px;
+    border-radius: 50px;
+    background: rgba(3, 23, 240, 0.603);
+    transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+}
+.search-wrapper .input-holder .search-input {
+    width:100%;
+    height: 50px;
+    padding:0px 70px 0 20px;
+    opacity: 0;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: transparent;
+    box-sizing: border-box;
+    border:none;
+    outline:none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color:yellow;
+    transform: translate(0, 60px);
+    transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition-delay: 0.3s;
+}
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    transform: translate(0, 10px);
+}
+.search-wrapper .input-holder .search-icon {
+    width:70px;
+    height:70px;
+    border:none;
+    border-radius:6px;
+    background: yellow;
+    padding:0px;
+    outline:none;
+    position: relative;
+    z-index: 2;
+    float:right;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.search-wrapper.active .input-holder .search-icon {
+    width: 50px;
+    height:50px;
+    margin: 10px;
+    border-radius: 30px;
+}
+.search-wrapper .input-holder .search-icon span {
+    width:22px;
+    height:22px;
+    display: inline-block;
+    vertical-align: middle;
+    position:relative;
+    transform: rotate(45deg);
+    transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+}
+.search-wrapper.active .input-holder .search-icon span {
+    transform: rotate(-45deg);
+}
+.search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+    position: absolute; 
+    content:'';
+}
+.search-wrapper .input-holder .search-icon span::before {
+    width: 4px;
+    height: 18px;
+    left: 6px;
+    top: 16px;
+    border-radius: 2px;
+    background: blue;
+}
+.search-wrapper .input-holder .search-icon span::after {
+    width: 25px;
+    height: 23px;
+    right: 3px;
+    bottom: 12px;
+    border-radius: 16px;
+    border: 4px solid blue;
+}
+.search-wrapper .close {
+    position: absolute;
+    z-index: 1;
+    top:24px;
+    right:20px;
+    width:25px;
+    height:25px;
+    cursor: pointer;
+    transform: rotate(-180deg);
+    transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    transition-delay: 0.2s;
+}
+.search-wrapper.active .close {
+    right:-50px;
+    transform: rotate(45deg);
+    transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    transition-delay: 0.5s;
+}
+.search-wrapper .close::before, .search-wrapper .close::after {
+    position:absolute;
+    content:'';
+    background: yellow;
+    border-radius: 2px;
+}
+.search-wrapper .close::before {
+    width: 5px;
+    height: 25px;
+    left: 10px;
+    top: 0px;
+}
+.search-wrapper .close::after {
+    width: 25px;
+    height: 5px;
+    left: 0px;
+    top: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="img/512x512logo.png" type="img/512x512logo.png">
+    <link rel="stylesheet" href="css/tarihce.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>MÜZE</title>
+</head>
+<body onload="guncelTarihVeSaat()">
+    <div>  
+        <nav class="navbar bg-light navbar-light navbar-expand-sm sticky-top">
+            <a href="./index.html" class="navbar-brand"><img src="img/512x512logo.png" alt="fenerbahçe logo" title="Fenerbahçe" width="20%"></a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="title">
+                <h1 class="navbar-text ml-5 mx-5 titleText" title="Fenerbahçe Spor Kulübü Taraftar Platformu olan Fenerin Sesi'ne hoşgeldiniz">FENERİN SESİ</h1>
+                <br>
+                <small class="mx-4 smallText">Fenerbahçe Spor Kulübü Taraftar Platformu</small>
+                <br>
+                <div class="alt-cizgi "></div>
+                <div class="sosyal-medya-logolar ">
+                  <a href="#" onclick="openInNewTab('https://www.facebook.com/fenerbahce'); return false;"><i class="fab fa-facebook fa-lg" style="color: #043d9f;" title="Fenerbahçe Facebook"></i></a>
+                  <a href="#" onclick="openInNewTab('https://www.twitter.com/fenerbahce'); return false;"><i class="fab fa-twitter fa-lg" style="color: #043d9f;" title="Fenerbahçe Twitter"></i></a>
+                  <a href="#" onclick="openInNewTab('https://www.instagram.com/fenerbahce'); return false;"><i class="fab fa-instagram fa-lg" style="color: #043d9f;" title="Fenerbahçe Instagram"></i></a>
+                  <a href="#" onclick="openInNewTab('https://www.youtube.com/fenerbahce'); return false;"><i class="fab fa-youtube fa-lg" style="color: #043d9f;" title="Fenerbahçe YouTube"></i></a>        
+              </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">ANA SAYFA</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KULÜP</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://www.fenerbahce.org/kulup/iletisim" target="_blank"><i class="fal fa-phone" style="color: #000000; margin-right: 7px;"></i>  İLETİŞİM</a>
+                    <a class="dropdown-item" href="./tarihce.html"><i class="fal fa-hourglass-start" style="color: #000000; margin-right: 8.5px;"></i>  TARİHÇE</a>
+                    <a class="dropdown-item" href="./muze.html"><i class="fal fa-trophy" style="color: #000000; margin-right: 4px;"></i>  MÜZE</a>
+                    <a class="dropdown-item" href="./fbu.html"><i class="fal fa-school" style="color: #000000; margin-right: 4px;"></i>  FBÜ</a>
+                  </div>      
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BRANŞLAR</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" href="./futbol.html"><i class="fal fa-futbol" style="color: #000000; margin-right: 6px;"></i> FUTBOL</a>
+                    <a class="dropdown-item" href="./basketbol.html"><i class="fal fa-basketball-ball" style="color: #000000; margin-right: 6px;"></i> BASKETBOL</a>
+                    <a class="dropdown-item" href="./voleybol.html"><i class="fal fa-volleyball-ball" style="color: #000000; margin-right: 6px;"></i> VOLEYBOL</a>
+                  </div>    
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./fbtv.html">FB TV</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./hakkimizda.html">HAKKIMIZDA</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </div>    
+      
+    <div class="animated animatedFadeInUp fadeInUp" id="kayan-gorsel">
+      <div class="metin-container">
+          <p class="sol-metin">MÜZE</p>
+          <img src="./img/EqWoDv7XEAETSrZ.jpeg" alt="Kayan Görsel">
+          <p class="sag-metin"><i class="fal fa-trophy" style="color: #000000; margin-right: 5px;"></i> Kulüp - MÜZE</p>
+      </div>
+    </div>
+    
+    <br><br>
+
+    <div class="text-light text-left col-12 justify-content-end animated animatedFadeInUp fadeInUp">
+        <h3 class="text-light font-weight-bold">MÜZENİN YERİ VE BÖLÜMLERİ</h3><br><br>
+        <div class="row">
+            <div class="col-10">
+            <p class="text-light font-bold">
+                * Dünya’da futbolun doğuşu ile ilgili özet dokümanların sunulduğu bir bölüm.<br><br>
+                * Fenerbahçe Spor Kulubü’nün, 1907 yılında Nurizade Ziya Bey başkanlığındaki üç kurucu üyemiz tarafından ilk kuruluş toplantısının gerçekleştirildiği ve mumyalarıyla canlandırıldığı odanın, döneminin eşyaları ile sunulduğu bölüm.<br><br>
+                * Fenerbahçe Spor Kulübü’nün, 1899 tarihindeki “Black Stockings” ismi altında kuruluş teşebbüsü dahil, günümüze değin her dönemde kullandığı formalar, çoraplar, futbol ayakkabıları, vs. giysi çeşitleri ve meşin topların sergilendiği bölümler.<br><br>
+                * Atamızın 3 Mayıs 1918 günü kulübümüzü ziyaretinin ve kulüp şeref defterini imzalama anının (mumyalı olarak) canlandırıldığı bölüm.<br><br>
+                * İşgal dönemi sırasında Kurbalıdere’deki lokalimizden, cepheye silah kaçırılma anının mumyalarla canlandırdığı bölüm.<br><br>
+                * İşgal yıllarında, İşgal Kuvvetleri’ne karşı kazanılmış olan ve “Milliyetçi Karşı Çıkış Harekatı”nın ilk simgesi niteliğindeki “Harrington Kupası”nın, İşgal Orduları ile yapılan futbol müsabakalarının orijinal fotoğrafları eşliğinde sergilendiği özel bölüm.<br><br>
+                * Fenerbahçe Spor Kulubü’nün, yeni bulunmuş olan (1329/1913 ve 1339/1923 ) ilk iki nizamnamesinin asılları ile, Osmanlıca’dan günümüz Türkçesine çevirilerinin sergilendiği özel bölüm.<br><br>
+                * Kuruluştan itibaren kulübümüzün tüm branşlarındaki başarılarını simgeleyen kupaların, şiltlerin ve özel madalyaların sergilendiği bölümler.<br><br>
+                * Fenerbahçe Spor Kulübü’nün kuruluşundan itibaren bulunmuş, belgelerin, beratların, eski üye kartlarının, eski lisansların ve eski müsabakalardan fotoğrafların tarihsel bir sıra içinde sergilendiği bölümler.<br><br>
+                * Fenerbahçe Spor Kulübü ile ilgili, gerek kulüp özel arşivinde yer almış ve gerekse de isimleri altlarında yazılı özel kişiler tarafından bağışlanmış eski maç biletleri, eski kulüp piyango biletleri, ve sair ephemeral materyallerin sunulduğu bölümler,<br><br>
+                * Union Club Sahası’ndan Şükrü Saracoğlu Stadyumu’na kadar, stadın evrelerinin fotoğraf ve maket ile sunulduğu bölüm,<br><br>
+                * Eski maç ve gösterilerden filmlerin devamlı olarak sunulduğu “Sinema Odası”,
+                Kulüp tarihi ile ilgili bilgileri içeren kitapların yer aldığı, “Arşiv ve Kütüphane Bölümü” (Bilgisayar ağı eşliğindeki istatistiki bilgilerin sunulabilmesi için çalışmalar devam etmektedir.)<br><br>
+                * Fenerbahçe Şükrü Saracoğlu Stadyumu Maraton Tribünü alt tarafında bulunan Fenerium’un karşı salonunda, 980 m2lik bölümde yer alan Fenerbahçe Spor Kulübü Müzesi’nde, şu bölümler bulunmaktadır;
+            </p>
+            </div>
+        </div>
+        <div style="margin-left: 130px;" class="row col-12 mt-5 justify-content-center align-items-center">
+            <div>
+                <img class="col-3" src="./img/026e5bf5-1c85-4b07-bcf2-5dec59e76333.jpg">
+                <img class="col-3" src="./img/6eb6b8f6-2d3f-45ad-b789-3ebcdfa1d687.jpg">
+                <img class="col-3" src="./img/68527caa-e2f6-4d04-9171-e6aa5a3a3430.jpg">
+            </div>
+            <div class="my-5">
+                <img class="col-3" src="./img/d55ec79e-fa22-48d2-ad5a-6c4c3648a223.jpg">
+                <img class="col-3" src="./img/e101ff88-4481-42ea-b261-9fa0b93bcf71.jpg">
+                <img class="col-3" src="./img/d741de79-53bc-456b-bfbe-ce5bf740f9de.jpg">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer class="footer animated animatedFadeInUp fadeInUp">
+      <div class="container w-100">
+        <div class="row">
+          <div class="col-md-2 my-5 mx-0">
+            <br>
+            <img src="./img/fb_logo.png" width="70%">
+          </div>
+          <div class="text-light">
+            <br><br>
+            <h5>İletişim </h5>
+            <p class="text-light"><i class="fal fa-home fa-lg" style="color: #ffffff;"></i> ÜLKER STADYUMU <br>FENERBAHÇE ŞÜKRÜ SARACAOĞLU SPOR KOMPLEKSİ, <br>34724 Kadıköy/İSTANBUL</p>
+            <p class="text-light"><i class="fal fa-phone fa-lg" style="color: #ffffff;"></i> 444 19 07</p>
+            <p class="text-light"><i class="fal fa-envelope fa-lg" style="color: #ffffff;"></i><a href="mailto:halklailiskiler@fenerbahce.org?subject=Subject%20of%20Email" style="text-decoration: underline;" class="ml-2 text-light">halklailiskiler@fenerbahce.org</a></p>
+          </div>
+          <div style="margin-left: 135px;" class="col-md-2">
+            <br><br>
+            <h5>Hızlı Linkler</h5>
+            <br>
+            <ul class="list-unstyled ">
+              <li><a class="text-light" href="./index.html">Ana Sayfa</a></li>
+              <li><a class="text-light" href="./futbol.html">Futbol</a></li>
+              <li><a class="text-light" href="./basketbol.html">Basketbol</a></li>
+              <li><a class="text-light" href="./voleybol.html">Voleybol</a></li>
+              <li><a class="text-light" target="_blank" href="https://www.fenerbahce.org/kulup/iletisim">İletişim</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="text-light text-center container">
+            <br><br><br><br>
+            <div id="tarihSaat"></div>
+            <h4 style="font-family: 'Manrope', sans-serif;">Telif hakkı © 2023 FENERİN SESİ | Geliştirici İbrahim Koçal</h2>
+            <br>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="search-wrapper right-bottom animated animatedFadeInUp fadeInUp">
+      <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Aramak istediğinizi yazınız" />
+          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+      </div>
+      <span class="close" onclick="searchToggle(this, event);"></span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tarihce.js"></script>
+          
+</body>
+</html>

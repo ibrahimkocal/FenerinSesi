@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="img/512x512logo.png" type="img/512x512logo.png">
+    <link rel="stylesheet" href="css/tarihce.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>FBÜ</title>
+    <style>
+        #fbulink{
+            margin-left: 250px;
+            border: 5px solid yellow;
+            background: yellow;
+            border-radius: 7px;
+            color:blue;
+        }
+        #fbulink:hover{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body onload="guncelTarihVeSaat()">
+  <div>  
+    <nav class="navbar bg-light navbar-light navbar-expand-sm sticky-top">
+        <a href="./index.html" class="navbar-brand"><img src="img/512x512logo.png" alt="fenerbahçe logo" title="Fenerbahçe" width="20%"></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="title">
+            <h1 class="navbar-text ml-5 mx-5 titleText" title="Fenerbahçe Spor Kulübü Taraftar Platformu olan Fenerin Sesi'ne hoşgeldiniz">FENERİN SESİ</h1>
+            <br>
+            <small class="mx-4 smallText">Fenerbahçe Spor Kulübü Taraftar Platformu</small>
+            <br>
+            <div class="alt-cizgi "></div>
+            <div class="sosyal-medya-logolar ">
+              <a href="#" onclick="openInNewTab('https://www.facebook.com/fenerbahce'); return false;"><i class="fab fa-facebook fa-lg" style="color: #043d9f;" title="Fenerbahçe Facebook"></i></a>
+              <a href="#" onclick="openInNewTab('https://www.twitter.com/fenerbahce'); return false;"><i class="fab fa-twitter fa-lg" style="color: #043d9f;" title="Fenerbahçe Twitter"></i></a>
+              <a href="#" onclick="openInNewTab('https://www.instagram.com/fenerbahce'); return false;"><i class="fab fa-instagram fa-lg" style="color: #043d9f;" title="Fenerbahçe Instagram"></i></a>
+              <a href="#" onclick="openInNewTab('https://www.youtube.com/fenerbahce'); return false;"><i class="fab fa-youtube fa-lg" style="color: #043d9f;" title="Fenerbahçe YouTube"></i></a>        
+          </div>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">ANA SAYFA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KULÜP</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://www.fenerbahce.org/kulup/iletisim" target="_blank"><i class="fal fa-phone" style="color: #000000; margin-right: 7px;"></i>  İLETİŞİM</a>
+                <a class="dropdown-item" href="./tarihce.html"><i class="fal fa-hourglass-start" style="color: #000000; margin-right: 8.5px;"></i>  TARİHÇE</a>
+                <a class="dropdown-item" href="./muze.html"><i class="fal fa-trophy" style="color: #000000; margin-right: 4px;"></i>  MÜZE</a>
+                <a class="dropdown-item" href="./fbu.html"><i class="fal fa-school" style="color: #000000; margin-right: 4px;"></i>  FBÜ</a>
+              </div>      
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BRANŞLAR</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="./futbol.html"><i class="fal fa-futbol" style="color: #000000; margin-right: 6px;"></i> FUTBOL</a>
+                <a class="dropdown-item" href="./basketbol.html"><i class="fal fa-basketball-ball" style="color: #000000; margin-right: 6px;"></i> BASKETBOL</a>
+                <a class="dropdown-item" href="./voleybol.html"><i class="fal fa-volleyball-ball" style="color: #000000; margin-right: 6px;"></i> VOLEYBOL</a>
+              </div>    
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./fbtv.html">FB TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hakkimizda.html">HAKKIMIZDA</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>      
+    <div class="animated animatedFadeInUp fadeInUp" id="kayan-gorsel">
+      <div class="metin-container">
+          <p class="sol-metin">FBÜ</p>
+          <img src="./img/EqWoDv7XEAETSrZ.jpeg" alt="Kayan Görsel">
+          <p class="sag-metin"><i class="fal fa-school" style="color: #000000; margin-right: 5px;"></i> Kulüp - FBÜ</p>
+      </div>
+    </div>
+    
+    <br><br>
+
+    <div class="text-light col-12 justify-content-end animated animatedFadeInUp fadeInUp">
+        <h3 class="text-light font-weight-bold">FENERBAHÇE ÜNİVERSİTESİ</h3><br><br>
+        <div class="row">
+            <div class="col-5">
+                <p class="text-light font-bold">
+                    Fenerbahçe Üniversitesi (FBÜ), Fenerbahçe Spor Kulübü’nün ilgili vakfınca kurulan İstanbul’daki bir vakıf üniversitesi.
+                    Nisan 2016’da Fenerbahçe Faruk Ilgaz Tesisleri’nde; kuruluşu, yönetimi ve işleyişiyle ilgili çalıştay başladı. Öğrenci kabul etmeye başladığı ilk yıl Medicana Grubu’nca ₺100M yatırım yapıldı. Kampüs ağının güvenliği ve Nesnelerin İnterneti teknolojileri bir Hewlett Packard Enterprise şirketi olan Aruba ile gerçekleştirildi. 2020’de TÜBİTAK ve TUSAŞ’ın iş birliğiyle yürütülen Milli Muharip Uçak Projesi’ne katkı sağlamaya başladı. İletişim Fakültesi öğrencileri; Aralık 2019’da “Ne Çocuk Ne Ergen” sosyal sorumluluk projesini başlattı ve Şubat 2020’de Uluslararası Çevre Vakfı’nın düzenlediği Çevrenin Genç Sözcüleri Yarışması’nda birinci oldu.
+                </p> 
+            </div>
+            <div style="margin-top: 75px; margin-left: 150px;" class="col-5 justify-content-center">
+                <img src="img/fbulogo.png" width="80%" height="45%">
+            </div>
+        </div>
+        <br>
+        <div style="margin-top: 75px; margin-left: 310px;" class="col-7 justify-content-center container">
+            <img src="img/Ekran-Resmi-2020-06-29-13.24.19-min.png" width="100%" height="45%">
+            <br><br>
+            <a id="fbulink" href="https://www.fbu.edu.tr/" target="_blank">FBÜ resmi sitesine ulaşmak için tıklayın</a>
+        </div>  
+    </div>
+    <br><br>
+    <footer class="footer animated animatedFadeInUp fadeInUp">
+      <div class="container w-100">
+        <div class="row">
+          <div class="col-md-2 my-5 mx-0">
+            <br>
+            <img src="./img/fb_logo.png" width="70%">
+          </div>
+          <div class="text-light">
+            <br><br>
+            <h5>İletişim </h5>
+            <p class="text-light"><i class="fal fa-home fa-lg" style="color: #ffffff;"></i> ÜLKER STADYUMU <br>FENERBAHÇE ŞÜKRÜ SARACAOĞLU SPOR KOMPLEKSİ, <br>34724 Kadıköy/İSTANBUL</p>
+            <p class="text-light"><i class="fal fa-phone fa-lg" style="color: #ffffff;"></i> 444 19 07</p>
+            <p class="text-light"><i class="fal fa-envelope fa-lg" style="color: #ffffff;"></i><a href="mailto:halklailiskiler@fenerbahce.org?subject=Subject%20of%20Email" style="text-decoration: underline;" class="ml-2 text-light">halklailiskiler@fenerbahce.org</a></p>
+          </div>
+          <div style="margin-left: 135px;" class="col-md-2">
+            <br><br>
+            <h5>Hızlı Linkler</h5>
+            <br>
+            <ul class="list-unstyled ">
+              <li><a class="text-light" href="./index.html">Ana Sayfa</a></li>
+              <li><a class="text-light" href="./futbol.html">Futbol</a></li>
+              <li><a class="text-light" href="./basketbol.html">Basketbol</a></li>
+              <li><a class="text-light" href="./voleybol.html">Voleybol</a></li>
+              <li><a class="text-light" target="_blank" href="https://www.fenerbahce.org/kulup/iletisim">İletişim</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="text-light text-center container">
+            <br><br><br><br>
+            <div id="tarihSaat"></div>
+            <h4 style="font-family: 'Manrope', sans-serif;">Telif hakkı © 2023 FENERİN SESİ | Geliştirici İbrahim Koçal</h2>
+            <br>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="search-wrapper right-bottom animated animatedFadeInUp fadeInUp">
+      <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Aramak istediğinizi yazınız" />
+          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+      </div>
+      <span class="close" onclick="searchToggle(this, event);"></span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tarihce.js"></script>
+    
+          
+</body>
+</html>

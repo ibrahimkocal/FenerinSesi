@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="img/512x512logo.png" type="img/512x512logo.png">
+    <link rel="stylesheet" href="css/tarihce.css"> 
+    <link rel="stylesheet" href="css/branslar.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>VOLEYBOL</title>
+</head>
+<body onload="guncelTarihVeSaat()">
+  <div>  
+    <nav class="navbar bg-light navbar-light navbar-expand-sm sticky-top">
+        <a href="./index.html" class="navbar-brand"><img src="img/512x512logo.png" alt="fenerbahçe logo" title="Fenerbahçe" width="20%"></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="title">
+            <h1 class="navbar-text ml-5 mx-5 titleText" title="Fenerbahçe Spor Kulübü Taraftar Platformu olan Fenerin Sesi'ne hoşgeldiniz">FENERİN SESİ</h1>
+            <br>
+            <small class="mx-4 smallText">Fenerbahçe Spor Kulübü Taraftar Platformu</small>
+            <br>
+            <div class="alt-cizgi "></div>
+            <div class="sosyal-medya-logolar ">
+              <a href="#" onclick="openInNewTab('https://www.facebook.com/fenerbahce'); return false;"><i class="fab fa-facebook fa-lg" style="color: #043d9f;" title="Fenerbahçe Facebook"></i></a>
+              <a href="#" onclick="openInNewTab('https://www.twitter.com/fenerbahce'); return false;"><i class="fab fa-twitter fa-lg" style="color: #043d9f;" title="Fenerbahçe Twitter"></i></a>
+              <a href="#" onclick="openInNewTab('https://www.instagram.com/fenerbahce'); return false;"><i class="fab fa-instagram fa-lg" style="color: #043d9f;" title="Fenerbahçe Instagram"></i></a>
+              <a href="#" onclick="openInNewTab('https://www.youtube.com/fenerbahce'); return false;"><i class="fab fa-youtube fa-lg" style="color: #043d9f;" title="Fenerbahçe YouTube"></i></a>        
+          </div>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">ANA SAYFA</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KULÜP</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://www.fenerbahce.org/kulup/iletisim" target="_blank"><i class="fal fa-phone" style="color: #000000; margin-right: 7px;"></i>  İLETİŞİM</a>
+                <a class="dropdown-item" href="./tarihce.html"><i class="fal fa-hourglass-start" style="color: #000000; margin-right: 8.5px;"></i>  TARİHÇE</a>
+                <a class="dropdown-item" href="./muze.html"><i class="fal fa-trophy" style="color: #000000; margin-right: 4px;"></i>  MÜZE</a>
+                <a class="dropdown-item" href="./fbu.html"><i class="fal fa-school" style="color: #000000; margin-right: 4px;"></i>  FBÜ</a>
+              </div>      
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BRANŞLAR</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="./futbol.html"><i class="fal fa-futbol" style="color: #000000; margin-right: 6px;"></i> FUTBOL</a>
+                <a class="dropdown-item" href="./basketbol.html"><i class="fal fa-basketball-ball" style="color: #000000; margin-right: 6px;"></i> BASKETBOL</a>
+                <a class="dropdown-item" href="./voleybol.html"><i class="fal fa-volleyball-ball" style="color: #000000; margin-right: 6px;"></i> VOLEYBOL</a>
+              </div>    
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./fbtv.html">FB TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./hakkimizda.html">HAKKIMIZDA</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>      
+    <div class="animated animatedFadeInUp fadeInUp" id="kayan-gorsel">
+      <div class="metin-container">
+          <p class="sol-metin">VOLEYBOL</p>
+          <img src="./img/EqWoDv7XEAETSrZ.jpeg" alt="Kayan Görsel">
+          <p class="sag-metin"><i class="fal fa-volleyball-ball" style="color: #000000; margin-right: 5px;"></i> Branşlar - VOLEYBOL</p>
+      </div>
+    </div>
+
+    <div class="voleybolBrans d-flex justify-content-center animated animatedFadeInUp fadeInUp">
+      <br><br>
+      <div style="margin-top: 10px; " class="text-center">
+        <h4 style = "font-family: 'Manrope', sans-serif;" class="display-4 text-light">VOLEYBOL</h4><br><br>
+        <p style="font-size: 20px;" class="text-light">
+          Fenerbahçe (kadın voleybol takımı) veya sponsorluk anlaşması gereği Fenerbahçe Opet, Fenerbahçe Spor Kulübünün kadın voleybol şubesidir. Fenerbahçe, maçlarını TVF Burhan Felek Voleybol Salonu’nda oynamaktadır.
+          Fenerbahçe 2008-09 sezonunda Türkiye Birinci Voleybol Ligi’ni tarihinde ilk kez şampiyon olarak tamamladı. Avrupa kupalarında ise aynı yıl CEV Kadınlar Kupası’nda 3. oldu.
+          2009-10 sezonuna Süper Kupa ile girdikten sonra, Türkiye Kupası’nda Vakıfbank Güneş Sigorta Türk Telekom’u 2-3 4-2 (altın set ile) yenerek bu kupayı da tarihinde ilk kez kazandı. Ligde ise normal sezonu namağlup tamamladıktan sonra play-off yarı finalinde Galatasaray’ı 3 kez 3-0 yenerek eledi. Play-off finalinde ise Vakıfbank Güneş Sigorta Türk Telekom ile karşılaşan sarı-lacivertliler bu seriyi de 3-2, 3-2 ve 3-0’lık galibiyetlerle, 3-0 yengin tamamladılar ve ikinci kez üst üste lig şampiyonluğuna ulaştılar.
+          2010’da CEV Şampiyonlar Ligi Dörtlü Finali’nde, Fransa’nın Cannes kentinde, ev sahibi RC Cannes takımını 3-2 yenerek finale yükseldi. Finalde İtalya’nın Volley Bergamo takımına 3-2 yenilerek Avrupa Şampiyonlar Ligi 2.si oldu.
+          2010-11 sezonunda kulübü istenilen başarılara ulaştırmak adına dünyanın en iyi antrenörü olarak kabul edilen Brezilyalı ünlü hoca José Roberto Guimarães (Zé Roberto) takımın başına getirildi.
+          2011 yılında Fenerbahçe, Katar’ın başkenti Doha’da düzenlenen Dünya Kulüplerarası Voleybol Şampiyonası finalinde Brezilya’nın Sollys Osasco takımını 3-0 yenerek tarihteki dünya şampiyonu olan ilk Türk takımıdır.
+          2011 CEV Şampiyonlar Ligi Final Four organizasyonunu İstanbul’da düzenlemiş olan Fenerbahçe, Avrupa 3.’sü olmuştur.
+          2011-12 sezonunda ise Fenerbahçe Universal, CEV Şampiyonlar Ligi’ni kazanarak Avrupa şampiyonu unvanına ulaşmıştır. 2015-16 sezonunda Fenerbahçe, bir kez daha Avrupa 3.sü olmuştur. 2018-19 sezonunda Fenerbahçe Opet, CEV Şampiyonlar Ligi 3.’sü olmuştur. 2021-22 sezonunda ise Fenerbahçe, ilk kez Türkiye’de düzenlenen FIVB Dünya Kulüpler Şampiyonası‘nda dünya 3.’sü olmuştur.
+        </p>  
+      </div>
+    </div>
+    <br>
+    <div class="accordion-container">
+      <button class="accordion">
+        <img src="img/cev.png" alt="Euroleague Kupası" width="6%" class="accordion-icon">
+        CEV Şampiyonlar Ligi Şampiyonluğu (1)
+      </button>
+      <div class="panel">
+        <p class="text-light">2011-12</p>
+        <br>
+      </div>
+
+      <button class="accordion">
+        <img src="img/fivbkupa.png" width="6%" class="accordion-icon">
+        FIVB Dünya Şampiyonluğu (1)
+      </button>
+      <div class="panel">
+        <p class="text-light">2010</p>
+      </div> 
+
+      <button class="accordion">
+        <img src="img/sultanlar.png" width="6%" class="accordion-icon">
+        Sultanlar Ligi Şampiyonluğu (6)
+      </button>
+      <div class="panel">
+        <p class="text-light">2008-09, 2009-10, 2010-11, 2014-15, 2016-17, 2022-23</p>
+      </div>
+
+      <button class="accordion">
+        <img src="img/kupavoley.png" width="6%" class="accordion-icon">
+        Kupa Voley Şampiyonluğu (3)
+      </button>
+      <div class="panel">
+        <p class="text-light">2009-10, 2014-15, 2016-17</p>
+      </div> 
+    </div>  
+    <br><br>
+
+    <h1 class="display-4 text-center text-light">SPORCULAR</h1><br><br><br>
+      <div class="row  ml-4 animated animatedFadeInUp fadeInUp">
+          <div class="col-3 voleybolDivs" onmouseover="flipCard(this)" onmouseout="unflipCard(this)">
+            <div class="cardFront">
+              <img src="img/voleybol/gizem.png" width="300px;"style="padding-left: 30px;">
+              <p class="text-primary font-weight-bold">1 - GİZEM ÖRGE</p>
+            </div>
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Libero</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Türkiye</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 170 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 30</p>
+            </div>  
+          </div>
+          <div class="col-3 voleybolDivs">
+            <div class="cardFront">
+              <img src="img/voleybol/cansu.png" width="300px;"style="padding-left: 20px;">
+              <p class="text-primary font-weight-bold pb-2">7 - CANSU ÇETİN</p>
+            </div>
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Smaçör</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Türkiye</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 183 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 30</p>
+            </div>  
+          </div>
+          <div class="col-3 voleybolDivs ">
+            <div class="cardFront">
+              <img src="img/voleybol/aslı.png" width="325px;"style="padding-left: 20px;">
+              <p class="text-primary font-weight-bold pt-2">8 - ASLI KALAÇ</p>
+            </div> 
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Orta Oyuncu</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Türkiye</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 185 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 27</p>
+            </div> 
+          </div>
+          <div class="col-3 voleybolDivs mt-5">
+            <div class="cardFront pr-3"> 
+              <img src="img/voleybol/meliha.png" width="320px;"style="padding-left: 40px;">
+              <p class="text-primary font-weight-bold pl-4">9 - MELİHA DİKEN</p>
+            </div>
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Smaçör</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Türkiye</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 189 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 29</p>
+            </div>   
+          </div>
+          <div class="col-3 voleybolDivs mt-5 ">
+            <div class="cardFront">
+              <img src="img/voleybol/arina.png" width="300px;"style="padding-left: 20px;">
+              <p class="text-primary font-weight-bold pl-1">10 - ARINA FEDOROVTSEVA</p>
+            </div> 
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Smaçör</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Rusya</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 190 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 19</p>
+            </div>   
+          </div>
+          <div class="col-3 voleybolDivs mt-5">
+            <div class="cardFront">
+              <img src="img/voleybol/anacristina.png" width="315px;"style="padding-left: 23px;">
+              <p class="text-primary font-weight-bold pl-2">12 - ANA CRISTINA</p>
+            </div>
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Smaçör</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Brezilya</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 192 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 19</p>
+            </div>  
+          </div>
+          <div class="col-3 voleybolDivs mt-5">
+            <div class="cardFront"> 
+              <img src="img/voleybol/meryem.png" width="290px;"style="padding-left: 25px;">
+              <p class="text-primary font-weight-bold pb-1 pl-2">13 - MERYEM BOZ</p>
+            </div>
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Pasör Çaprazı</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Türkiye</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 190 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 35</p>
+            </div>   
+          </div>
+          <div class="col-3 voleybolDivs mt-5">
+            <div class="cardFront">
+              <img src="img/voleybol/edaerdem.png" width="310px;"style="padding-left: 30px;">
+              <p class="text-primary font-weight-bold pl-2">14 - EDA ERDEM DÜNDAR (K)</p>
+            </div>
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Orta Oyuncu</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Türkiye</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 188 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 35</p>
+            </div>  
+          </div>
+          <div class="col-3 voleybolDivs mt-5">
+            <div class="cardFront">
+              <img src="img/voleybol/vargas.png" width="320px;"style="padding-left: 35px;">
+              <p class="text-primary font-weight-bold pl-1">44 - MELİSSA VARGAS</p>
+            </div> 
+            <div class="cardBack">
+              <br><br>
+              <p><i class="far fa-user fa-lg" style="color: #2f3698;"></i> Pasör Çaprazı</p>
+              <p><i class="far fa-flag-alt fa-lg" style="color: #2f3698;"></i> Türkiye</p>
+              <p><i class="far fa-sort-size-up fa-lg" style="color: #2f3698;"></i> 193 cm</p>
+              <p><i class="far fa-calendar-alt fa-lg" style="color: #2f3698;"></i> 23</p>
+            </div> 
+          </div>       
+        </div>
+     <br><br>   
+    <footer class="footer animated animatedFadeInUp fadeInUp">
+      <div class="container w-100">
+        <div class="row">
+          <div class="col-md-2 my-5 mx-0">
+            <br>
+            <img src="./img/fb_logo.png" width="70%">
+          </div>
+          <div class="text-light">
+            <br><br>
+            <h5>İletişim </h5>
+            <p class="text-light"><i class="fal fa-home fa-lg" style="color: #ffffff;"></i> ÜLKER STADYUMU <br>FENERBAHÇE ŞÜKRÜ SARACAOĞLU SPOR KOMPLEKSİ, <br>34724 Kadıköy/İSTANBUL</p>
+            <p class="text-light"><i class="fal fa-phone fa-lg" style="color: #ffffff;"></i> 444 19 07</p>
+            <p class="text-light"><i class="fal fa-envelope fa-lg" style="color: #ffffff;"></i><a href="mailto:halklailiskiler@fenerbahce.org?subject=Subject%20of%20Email" style="text-decoration: underline;" class="ml-2 text-light">halklailiskiler@fenerbahce.org</a></p>
+          </div>
+          <div style="margin-left: 135px;" class="col-md-2">
+            <br><br>
+            <h5>Hızlı Linkler</h5>
+            <br>
+            <ul class="list-unstyled ">
+              <li><a class="text-light" href="./index.html">Ana Sayfa</a></li>
+              <li><a class="text-light" href="./futbol.html">Futbol</a></li>
+              <li><a class="text-light" href="./basketbol.html">Basketbol</a></li>
+              <li><a class="text-light" href="./voleybol.html">Voleybol</a></li>
+              <li><a class="text-light" target="_blank" href="https://www.fenerbahce.org/kulup/iletisim">İletişim</a></li>
+            </ul>
+          </div>
+          <br>
+          <div class="text-light text-center container">
+            <br><br><br><br>
+            <div id="tarihSaat"></div>
+            <h4 style="font-family: 'Manrope', sans-serif;">Telif hakkı © 2023 FENERİN SESİ | Geliştirici İbrahim Koçal</h2>
+            <br>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="search-wrapper right-bottom animated animatedFadeInUp fadeInUp">
+      <div class="input-holder">
+          <input type="text" class="search-input" placeholder="Aramak istediğinizi yazınız" />
+          <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+      </div>
+      <span class="close" onclick="searchToggle(this, event);"></span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tarihce.js"></script>
+    <script src="js/branslar.js"></script>
+          
+</body>
+</html>
